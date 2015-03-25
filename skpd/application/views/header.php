@@ -46,21 +46,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">PPID Bontang</a>
+              <a class="navbar-brand" href="#">SKPD Bontang</a>
             </div>          
         </div>
         <div id="navbar" class="navbar-collapse collapse" >
         <ul class="nav navbar-nav" ng-controller='checkActive'>
-                <li ng-class="{ active: isActive('beranda')}"><a href="#">Beranda</a></li>
-                <li ng-class="{ active: isActive('informasi')}"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                	Informasi <span class="caret"></span></a>
-                	<ul class="dropdown-menu" role="menu">
-		                <li><a href="<?=base_url()?>index.php/c_informasi">Daftar Informasi</a></li>
-		                <li><a href="<?=base_url()?>index.php/c_informasi/informasi_berkala">Informasi berkala</a></li>
-		                <li><a href="<?=base_url()?>index.php/c_informasi/informasi_rutin">Informasi Setiap Saat</a></li>
-		                <li><a href="<?=base_url()?>index.php/c_informasi/informasi_mendadak">Informasi Serta Merta</a></li>
-                	</ul>
-                </li>
+                <li ng-class="{ active: isActive('beranda')}"><a href="#">Profil Dinas</a></li>
+                <li ng-class="{ active: isActive('beranda')}"><a href="#">Pelayanan</a></li>
+                <li ng-class="{ active: isActive('beranda')}"><a href="#">Terminal View</a></li>
                 
                 
                 <!-- <li class="dropdown">
@@ -111,7 +104,37 @@
       </div>
     </nav>
    
+    <nav class="navbar navbar-inverse" role="navigation" 
+    	style="margin-top: 5%; width: 85%; margin-left: auto;
+    			margin-right: auto;
+    			">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"><i class="fa fa-home fa-fw"></i> Beranda</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
    
+      <li class="dropdown"> 
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tachometer fa-fw"></i> Kegiatan</a></li>       
+        
+        
+        <li class="dropdown"> 
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tachometer fa-fw"></i> Berita Dinas</a></li>
+        
+        
+        
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
 
  
    	
